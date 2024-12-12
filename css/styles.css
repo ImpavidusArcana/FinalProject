@@ -1,0 +1,233 @@
+/*
+Student Name: Shannon Brasel
+Date: 12/11/25
+File Name: styles.css
+*/
+/*CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+   
+}
+
+/*Style rules for body and images*/
+.bg-cream {
+    background-color: #dbd6ce;
+}
+.text-color-h1 {
+    color: white;
+    text-shadow: 2px 2px 2px #20201e;
+}
+.bg-gradient {
+    background-image:linear-gradient(to bottom right,#6b277c,#6d3973,rgb(231, 199, 230), #8b2396) ;
+}
+.header-display {
+    margin-top: 10%;
+}
+/*Style rule to show mobile video and hide tablet/desktop video*/
+.video-mobile{
+    text-align: center;
+}
+.video-tablet, .video-desktop {
+    display:none;
+}
+/*Style Rules for mobile viewport */
+
+/*Style Rules for Nav*/
+.bg-nav {
+    background-color:#2c616b;
+}
+/*Style rules for header area */
+.header-config {
+    display: block;
+    margin: 5%;
+}
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/citybg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*Style rules for main content */
+figure {
+    border: 4px solid rgb(195, 196, 175);
+    box-shadow: 6px 6px 10px #c5a687;
+    max-width: 400px;
+}
+figcaption {
+    color: #3f3f3c;
+    font-size: 1.25em;
+    text-indent: 3%;
+    background-color:white;
+}
+figure img{
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
+   width: 200px;
+}
+.text-color-p {
+    font-size: 1.5em;
+    color:#3f3f3c;
+}
+aside {
+    text-align: center;
+    color:#3f3f3c;
+    font-weight: bold;
+    font-size: 1.45em;
+    margin-left:auto;
+    margin-right: auto;
+}
+main h2, h3 {
+    color:#3f3f3c
+}
+main h2 {
+    font-size: 1.5em;
+}
+main h3 {
+    font-size: 1.45em;
+}
+.p-height{
+    height: 400px;
+}
+.border-div {
+    background-color:#3f3f3c;
+}
+div.scroll-container {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+  div.scroll-container img {
+    padding: 10px;
+    width: 400px;
+    height: 325px;
+}
+article {
+    margin-top: 3%;
+    border-top: 2px solid #3f3f3c;
+}
+.outcome-p {
+    font-size: 1.5em;
+    text-indent: 2%;
+}
+.outcome-ul {
+    font-size: 1.15em;
+}
+.outcome-h3 {
+    font-size: 1.90em;
+}
+.grid {
+    margin-left: auto;
+    margin-right: auto;
+}
+/*Style rules for footer content */
+.footer {
+    background-color:#2c616b;
+    color: white;
+}
+
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 620px) {
+/*Tablet Viewport: Show tab-desk class, hide mobile class*/
+.video-tablet {
+    display:block;
+    text-align: center;
+}
+.video-mobile, .video-desktop {
+    display: none;
+}
+/*Tablet viewport: Style Rules for Main Content*/
+.grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 8px;
+    margin-left: 5%;
+    margin-right: 5%;
+   }
+figcaption{
+    font-size: 1.50em;
+}
+.header-display {
+    margin-top: 4%;
+}
+aside {
+    grid-column: 1 /span 2;
+    font-size: 2em;
+   }
+main h2 {
+    font-size: 1.75em;
+}
+main h3 {
+    font-size: 1.65em;
+}
+div.scroll-container img {
+    width: 500px;
+    height:  400px;
+}
+.outcome-p {
+    font-size: 1.55em;
+}
+.outcome-ul {
+    font-size: 1.40em;
+}
+.p-height{
+    height: 225px;
+}
+footer {
+    margin-top: 10%;
+}
+}
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1000px) {
+/*Desktop: Show/Hide video*/
+.video-desktop{
+    display: block;
+    text-align: center;
+}
+.video-mobile, .video-tablet {
+    display: none;
+}
+/*Desktop viewport: Style Rules for Main Content*/
+.grid {
+    grid-template-columns: auto auto auto;
+    column-gap: 20px;
+    }
+.header-display{
+    margin-top: 0%;
+}
+aside {
+    grid-column: 1 / span 3;
+}
+footer {
+    font-size: 1.5em;
+}
+div.scroll-container img {
+    width: 520px;
+    height:  420px;
+}
+.outcome-p {
+    font-size: 1.75em;
+}
+.outcome-ul {
+    font-size: 1.60em;
+}
+.p-height{
+    height: 450px;
+}
+}
+/* Media Query for Large Desktop Viewports */
+@media screen and (min-width: 1921px){
+.grid {
+    column-gap: 300px;
+}
+.p-height{
+    height: 300px;
+}
+}
